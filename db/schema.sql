@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS low_tech_db;
+
+CREATE DATABASE low_tech_db;
