@@ -23,6 +23,7 @@ const sess = {
 app.use(session(sess));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(require('./controllers/'));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
