@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Post, Comment, } = require('../../models');
+const { User, Post, Comment } = require('../../models');
 
 //Get all users
 router.get('/', (req, res) => {
@@ -40,7 +40,7 @@ router.get('/:id', (req, res) => {
             res.status(404).json({ message: 'No User with this ID'})
             return;
         }
-        res.json(dbUserData)
+        res.json(dbUserData);
     })
     .catch(err => {
         console.log(err);
