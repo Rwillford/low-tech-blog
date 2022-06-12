@@ -1,5 +1,3 @@
-const { response } = require('express');
-
 async function newFormHandler(event) {
     event.preventDefault();
 
@@ -25,4 +23,4 @@ async function newFormHandler(event) {
 
 }
 
-document.querySelector('.new-post').addEventListener('submit', newFormHandler)
+document.querySelector('.create-btn').addEventListener('submit', newFormHandler)
