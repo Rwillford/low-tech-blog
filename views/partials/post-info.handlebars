@@ -1,9 +1,12 @@
-<div class="title">
-        <h2>{{post_title}}</h2>
-</div>
-<span>{{post_text}}</span>
-<div>
-    By {{user.username}} on {{format_date created_at}}
-    |
-    <a href="/post/{{id}}">{{comment.length}} {{format_plural "comment" comment.length}}</a>
-</div>
+<section>
+    <div class="title">
+            <h2>{{post_title}}</h2>
+    </div>
+    <span>{{post_text}}</span>
+    <div>
+        By {{user.username}} on {{format_date created_at}}
+        |
+        <a href="/post/{{id}}">{{comment.length}} {{format_plural "comment" comment.length}}</a>
+    </div>
+</section>
+
