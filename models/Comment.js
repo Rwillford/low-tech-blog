@@ -14,9 +14,6 @@ Comment.init(
         comment_text: {
             type: DataTypes.STRING,
             allowNull: false,
-            validate: {
-                notEmpty: true,
-            }
         },
         user_id: {
             type: DataTypes.INTEGER,
